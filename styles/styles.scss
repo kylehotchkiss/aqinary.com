@@ -1,0 +1,32 @@
+@import "_variables.scss";
+
+.aqi-container {
+    color: $color-white;
+    height: 100vh;
+
+    padding: 120px 0;
+
+    &.quality-loading {
+        background-color: $color-gray;
+    }
+
+    &.quality-good {
+        background-color: $color-green;
+    }
+
+    &.quality-meh {
+        background-color: $color-yellow;
+    }
+
+    &.quality-abysmal {
+        background-color: $color-red;
+    } 
+
+    .aqi-meta {
+        font-size: 16px;
+    }
+
+    .aqi-value {
+        font-size: 120px;
+    }
+}

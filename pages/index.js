@@ -113,7 +113,9 @@ class Index extends Component {
                                             {measurements.aqi_pm25}
                                         </h1>
                                         <div className="aqi-meta">
-                                            { measurements.station } &bull; { moment(measurements.updated_at).format('L LT') }
+                                            { measurements.station } &bull; { moment(measurements.updated_at).format('L LT') } 
+                                            &nbsp;&bull;&nbsp;
+                                            { this.state.usingRecycledData ? 'loading updates...' : 'latest data' } 
                                         </div>
                                     </div>
                                 </div>                    

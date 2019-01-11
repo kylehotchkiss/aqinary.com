@@ -1,6 +1,7 @@
-.next
-public
-node_modules
+out/
+.next/
+public/
+node_modules/
 
 .env
 .DS_Store
